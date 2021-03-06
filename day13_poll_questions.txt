@@ -1,0 +1,59 @@
+DAY 13 Poll Questions
+----------------------------
+
+which is the correct way to print the value of the 1st element in the array (consider arr is the name of array)?
+
+   I.   arr[0] , 0[arr]
+   II.  *(arr+0), *(0+arr)
+   III. *&arr[0]
+   IV.  *arr 	
+
+A. only I, II
+B. only I, II and III
+C. only I, II , III and IV
+D. only I, II and IV
+
+Answer: C
+
+
+by default variables are passed by ____ to functions and by default array are always passed by ______ to functions.
+
+A. value, address
+B. value, value
+C. address, address
+D. address, value
+Answer: A
+
+
+consider 64 bit compilation for the following program.
+#include<stdio.h>
+int main()
+{
+    short int a[] = { 11, 22, 33, 44 };
+    short int (*ptr)[4] = &a;
+    printf("%d %d", sizeof(ptr),  sizeof(a));
+    return 0;
+}
+
+A. 8  8
+B. 32 8
+C. 16 8
+D. 4  8
+Answer: A 
+
+
+#include<stdio.h>
+int main()
+{
+	int arr[10]={1 ,2 ,3 ,4 ,5 }; 
+	int *ptr=&arr[8];
+	printf("%d", -*(ptr-5));
+   	return 0;
+}
+
+A.  4 
+B. -3
+C. -5
+D. -4
+E. garbage value
+Answer: D 
